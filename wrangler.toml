@@ -4,10 +4,5 @@ main = "src/index.js"
 
 [dev]
 ip = "127.0.0.1"
-port = 8080
+port = 8020
 local_protocol = "http"
-
-[vars]
-# keys in this section will be made available as env vars
-WEB_URL = "http://127.0.0.1:3010"
-CMS_URL = "http://127.0.0.1:3000"

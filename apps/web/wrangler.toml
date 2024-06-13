@@ -2,13 +2,7 @@ name = "nuxt3-monorepo-web"
 compatibility_date = "2024-06-13"
 pages_build_output_dir = "./dist"
 
-node_compat = true
-
 [dev]
 ip = "127.0.0.1"
-port = 3000
+port = 8000
 local_protocol = "http"
-
-[vars]
-CMS_URL = "https://nuxt3-monorepo-cms.pages.dev"
-BASE_URL = "https://nuxt3-monorepo-web.pages.dev"

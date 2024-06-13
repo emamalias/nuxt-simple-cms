@@ -2,6 +2,8 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
 
+	modules: ["nitro-cloudflare-dev"],
+
   nitro: {
     preset: 'cloudflare_pages',
     prerender: {
@@ -10,7 +12,7 @@ export default defineNuxtConfig({
   },
 
 	vite: {
-		base: process.env.BASE_URL,
+		base: process.env.WEB_URL,
 	},
 
 	runtimeConfig: {
