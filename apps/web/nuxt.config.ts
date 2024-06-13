@@ -2,8 +2,6 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
 
-	modules: ["nitro-cloudflare-dev"],
-
   nitro: {
     preset: 'cloudflare_pages',
     prerender: {

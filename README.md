@@ -20,8 +20,8 @@ Local development
 ```bash
 pnpm run dev
 ```
-CMS - `http://localhost:3000`
-Web - `http://localhost:3010`
+Web - `http://127.0.0.1:3000`
+CMS - `http://127.0.0.1:3010`
 
 ## Deployment
 Web
