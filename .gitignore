@@ -32,5 +32,6 @@ lerna-debug.log*
 # misc
 .DS_Store
 
-_*-config.json
-*production.vars
+# cf
+*.vars
+!*.vars.example

@@ -24,9 +24,13 @@ CMS - `http://localhost:3000`
 Web - `http://localhost:3010`
 
 ## Deployment
-Build the project
+Web
 ```bash
-pnpm run build
+pnpm run build:web
+```
+CMS
+```bash
+pnpm run build:cms
 ```
 
 Deploy to cloudflare

@@ -10,12 +10,9 @@
 		"apps/*"
 	],
 	"scripts": {
-		"build": "pnpm run -r build",
-		"preview": "pnpm run -r preview",
-		"deploy": "wrangler deploy",
 		"dev": "wrangler dev",
-		"format": "prettier --cache --check .",
-		"lint": "eslint --cache ."
+		"build": "pnpm run -r build",
+		"deploy": "wrangler deploy"
 	},
 	"devDependencies": {
 		"@typescript-eslint/eslint-plugin": "7.8.0",
