@@ -1,0 +1,34 @@
+{
+	"name": "nuxt-simple-cms",
+	"private": true,
+	"version": "0.0.1",
+    "description": "Nuxt Simple CMS",
+    "license": "MIT",
+    "author": "Elias Mamalias <elias@mamalias.me>",
+	"homepage": "",
+	"workspaces": [
+		"apps/*"
+	],
+	"scripts": {
+		"build": "pnpm run -r build",
+		"preview": "pnpm run -r preview",
+		"deploy": "pnpm run -r deploy",
+		"dev": "pnpm run -r dev",
+		"format": "prettier --cache --check .",
+		"lint": "eslint --cache ."
+	},
+	"devDependencies": {
+		"@typescript-eslint/eslint-plugin": "7.8.0",
+		"@typescript-eslint/parser": "7.8.0",
+		"eslint": "8.57.0",
+		"eslint-config-prettier": "9.1.0",
+		"eslint-plugin-vue": "9.25.0",
+		"prettier": "3.1.0",
+		"wrangler": "3.60.0"
+	},
+	"packageManager": "pnpm@9.0.6",
+	"engines": {
+		"node": ">=18.18.0",
+		"pnpm": "~9.0"
+	}
+}
