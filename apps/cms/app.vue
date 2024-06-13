@@ -1,6 +1,7 @@
 <template>
   <div>
-    <NuxtRouteAnnouncer />
-    <NuxtWelcome />
+    hello from cms
+
+		your landing page url is: {{ useRuntimeConfig().public.webBaseUrl }}
   </div>
 </template>

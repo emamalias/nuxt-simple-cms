@@ -1,4 +1,4 @@
-name = "nuxt-simple-cms-worker"
+name = "nuxt3-monorepo"
 compatibility_date = "2024-06-13"
 main = "src/index.js"
 workers_dev = false

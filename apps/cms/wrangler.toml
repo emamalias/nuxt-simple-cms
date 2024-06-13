@@ -1,6 +1,9 @@
-name = "web"
+name = "nuxt3-monorepo-cms"
 compatibility_date = "2024-06-13"
 pages_build_output_dir = "./dist"
 
+workers_dev = false
+
 [vars]
-WEB_URL = "" # TODO
+WEB_URL = "https://nuxt3-monorepo-web.pages.dev"
+BASE_URL = "https://nuxt3-monorepo-cms.pages.dev"

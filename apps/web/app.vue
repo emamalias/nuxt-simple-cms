@@ -1,6 +1,7 @@
 <template>
   <div>
-    <NuxtRouteAnnouncer />
-    <NuxtWelcome />
+    hello from web
+
+		your cms page url is: {{ useRuntimeConfig().public.cmsBaseUrl }}
   </div>
 </template>
