@@ -9,14 +9,21 @@ jobs:
     timeout-minutes: 60
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
 
       - name: Install pnpm
         run: |
           npm install -g pnpm@9.0
 
-      - name: Install dependencies using pnpm
+      - name: Install dependencies
         run: |
           pnpm install
+
+      # -- should run some tests before deploying -- #
+      #- name: Run tests
+        #run: pnpm test
 
       - name: Deploy Worker
         uses: cloudflare/wrangler-action@v3
