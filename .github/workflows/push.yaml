@@ -9,7 +9,16 @@ jobs:
     timeout-minutes: 60
     steps:
       - uses: actions/checkout@v4
-      - name: Build & Deploy Worker
+
+      - name: Install pnpm
+        run: |
+          npm install -g pnpm@9
+
+      - name: Install dependencies using pnpm
+        run: |
+          pnpm install
+
+      - name: Deploy Worker
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
