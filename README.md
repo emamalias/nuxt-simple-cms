@@ -44,17 +44,19 @@ https://developers.cloudflare.com/pages/framework-guides/deploy-a-nuxt-site/
 
 
 ## Monorepo setup folder structure
-/my-monorepo
+```
+/my-awesome-project
 ├── /apps
 │   ├── /web
 │   │   ├── nuxt.config.js
-|	|	├── wrangler.toml
+│   │   ├── wrangler.toml
 │   │   └── ...
 │   ├── /cms
 │   │   ├── nuxt.config.js
-|	|	├── wrangler.toml
-│   |   └── ...
-|	|__ ...
+│   │   ├── wrangler.toml
+│   │   └── ...
+│   └── ...
 ├── /src
 │   └── /main.js
 └── wrangler.toml
+```
