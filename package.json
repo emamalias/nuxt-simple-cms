@@ -12,8 +12,8 @@
 	"scripts": {
 		"build": "pnpm run -r build",
 		"preview": "pnpm run -r preview",
-		"deploy": "pnpm run -r deploy",
-		"dev": "pnpm run -r dev",
+		"deploy": "wrangler deploy",
+		"dev": "wrangler dev",
 		"format": "prettier --cache --check .",
 		"lint": "eslint --cache ."
 	},

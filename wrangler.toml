@@ -1,0 +1,8 @@
+name = "nuxt-simple-cms-worker"
+main = "src/index.js"
+workers_dev = false
+
+[vars]
+# keys in this section will be made available as env vars
+WEB_URL = "http://localhost:3010"
+CMS_URL = "http://localhost:3000"
