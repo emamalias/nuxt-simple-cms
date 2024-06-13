@@ -15,3 +15,19 @@ pnpm run dev
 CMS - `http://localhost:3000`
 
 Web - `http://localhost:3010`
+
+
+## Deployment
+Build the project
+```bash
+pnpm run build
+```
+
+Deploy to cloudflare
+```bash
+wrangler pages deploy
+```
+
+> Guide for setting cloudflare account before deploying:
+
+https://developers.cloudflare.com/pages/framework-guides/deploy-a-nuxt-site/
