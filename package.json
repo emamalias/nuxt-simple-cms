@@ -2,9 +2,9 @@
 	"name": "nuxt-simple-cms",
 	"private": true,
 	"version": "0.0.1",
-    "description": "Nuxt Simple CMS",
-    "license": "MIT",
-    "author": "Elias Mamalias <elias@mamalias.me>",
+	"description": "Nuxt Simple CMS",
+	"license": "MIT",
+	"author": "Elias Mamalias <elias@mamalias.me>",
 	"homepage": "",
 	"workspaces": [
 		"apps/*"

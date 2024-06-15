@@ -1,20 +1,22 @@
 {
-  "name": "nuxt-app",
+  "name": "web",
   "private": true,
   "type": "module",
   "scripts": {
     "build": "nuxt build",
-    "dev": "nuxt build && wrangler pages dev",
+		"dev": "nuxt dev --port=3000 --localhost",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@nuxt/ui": "^2.17.0",
+    "md-editor-v3": "^4.16.7",
     "nuxt": "^3.12.1",
     "vue": "^3.4.27",
     "vue-router": "^4.3.3"
   },
-	"devDependencies": {
-		"nitro-cloudflare-dev": "latest"
-	}
+  "devDependencies": {
+    "nitro-cloudflare-dev": "latest"
+  }
 }
