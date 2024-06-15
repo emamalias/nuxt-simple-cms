@@ -1,6 +1,6 @@
-# Nuxt Simple CMS
+# Nuxt CMS Cloudflare (Worker/Pages)
 
-Making Changes using CI/CD on Nuxt3 content using cloudflare worker and pages
+Content Management for Nuxt3 to Cloudflare Services
 
 ## Setup
 Install dependencies
@@ -12,25 +12,22 @@ pnpm install
 ```bash
 npx wrangler login
 ```
-Confirm CF Permissions:
-```bash
-npx wrangler whoami
-```
+
 Local development
 ```bash
 pnpm run dev
 ```
 Web - `http://127.0.0.1:3000`
-CMS - `http://127.0.0.1:3010`
+Admin - `http://127.0.0.1:3010`
 
-## Deployment
-Web
+## Build & Deployment
+Build
 ```bash
-pnpm run build:web
+pnpm run build
 ```
-CMS
+Deploy
 ```bash
-pnpm run build:cms
+pnpm run deploy
 ```
 
 Deploy to cloudflare
@@ -51,7 +48,7 @@ https://developers.cloudflare.com/pages/framework-guides/deploy-a-nuxt-site/
 │   │   ├── nuxt.config.js
 │   │   ├── wrangler.toml
 │   │   └── ...
-│   ├── /cms
+│   ├── /admin
 │   │   ├── nuxt.config.js
 │   │   ├── wrangler.toml
 │   │   └── ...
